@@ -19,7 +19,7 @@ const BlogLayout = ({ children }) => {
           </li>
           <li>
             <button onClick={isAuthenticated ? logOut : logIn}>
-              {isAuthenticated ? 'Log Out' : 'Log In'}
+              {isAuthenticated ? 'Log Out' : 'Admin'}
             </button>
           </li>
           {isAuthenticated && <li>{currentUser.email}</li>}
